@@ -1,4 +1,15 @@
-h1{
-    
-    color: blue;
+body{
+    background-color: rgba(156, 167, 172, 0.897);
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.weather-app{
+    background: white;
+    max-width: 600px;
+    margin: 45px auto;
+    box-shadow: 0 30px 50px rgba(123, 112, 148, 0.08);
+    border-radius: 16px;
+    padding: 30px;
+
 }
