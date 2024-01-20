@@ -3,16 +3,15 @@ function refreshWeather(response) {
     let temperature = response.data.temperature.current;
 
     let cityElement = document.querySelector("#city");
-    cityElement.innerHTML = response.data.city;
+    let descriptionElement = document.querySelector("#description");
 
+    console.log(response.data.condition.description);
+    
+    cityElement.innerHTML = response.data.city;
+    descriptionElement.innerHTML = response.data.condition.description;
     temperatureElement.innerHTML = Math.round(temperature); 
     console.log(response.data.temperature.current);
 }
-
-
-
-
-
 
 function searchCity(city) {
     // make API call and update the interface
